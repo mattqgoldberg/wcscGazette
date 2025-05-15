@@ -1,4 +1,7 @@
-/* Reset some defaults */
+  :root {
+    --warrenred: #7d2248;
+  }
+
 * {
     margin: 0;
     padding: 0;
@@ -20,6 +23,10 @@
     color: #fff;
     padding: 20px;
     margin-bottom: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   
   header h1 {
@@ -37,13 +44,20 @@
     text-decoration: none;
   }
   
+  #recent-news {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+
   /* Main content */
-  main section {
+  main button {
     background-color: #fff;
     padding: 15px;
     margin-bottom: 15px;
-    border-radius: 4px;
+    border-radius: 10px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    width: 100%
   }
   
   /* Footer */
@@ -53,3 +67,12 @@
     color: #777;
   }
   
+  .popover {
+    margin: auto
+  }
+
+  @media (max-width: 600px) {
+    main {
+      grid-template-columns: 1fr;
+    }
+  }
