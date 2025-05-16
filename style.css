@@ -1,6 +1,7 @@
   :root {
     --warrenred: #7d2248;
-    --redcomp: #7D2A22;
+    --redcomp: #420B00;
+    --orange: #6A1C0C;
     --dark: #333;
     --light: #f9f9f9;
   }
@@ -16,7 +17,6 @@
     margin-right: 4%
   }
 
-  /* Body and typography */
   body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -24,7 +24,6 @@
     background-color: --light;
   }
   
-  /* Header & navigation */
   header {
     background-color: var(--warrenred);
     color: #fff;
@@ -32,7 +31,6 @@
     display: flex;
     justify-content: left;
     align-items: center;
-    margin-bottom: 1rem;
   }
   
   header h1 {
@@ -48,20 +46,30 @@
     text-indent: 2rem;
   }
 
-  nav ul {
-    list-style: none;
-    display: flex;
-    gap: 15px;
-  }
-  
-  nav a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  #about {
+  .main-section {
     background-color: var(--redcomp);
     padding: 1rem;
     margin-bottom: 1rem;
   }
 
+  ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr auto;
+    background-color: var(--orange);
+    padding: 0.5rem;
+  }
+
+  li {
+    width: 100%;
+    margin: auto;
+    margin-top: 0;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+  }
+
+  #recent {
+    margin-bottom: 100vh;
+  }
