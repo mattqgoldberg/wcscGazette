@@ -37,6 +37,7 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "council"}
       - {label: "Name", name: "title", widget: "string"}
       - {label: "Position", name: "position", widget: "string"}
       - {label: "Email", name: "email", widget: "string", required: false}
