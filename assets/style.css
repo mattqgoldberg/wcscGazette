@@ -357,8 +357,10 @@ ul {
 }
 
 .members-list .view-profile {
-  display: inline-block;
-  padding: 0.3rem 0.6rem;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.3rem 0;
   background: #7d2248;
   color: #fff;
   text-decoration: none;
@@ -366,7 +368,8 @@ ul {
   font-size: 0.7rem;
   transition: background 0.3s ease;
   margin-top: auto;
-  align-self: flex-start;
+  align-self: stretch;
+  text-align: center;
 }
 
 .members-list .view-profile:hover {
@@ -431,7 +434,7 @@ ul {
   }
   
   .members-list .view-profile {
-    padding: 0.35rem 0.7rem;
+    padding: 0.35rem 0;
     font-size: 0.75rem;
   }
 }
