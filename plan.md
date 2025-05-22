@@ -45,9 +45,10 @@
 | Implement article system    | ✅ Complete | Created article layout and sample content |
 | Add About, Team, Contact    | ✅ Complete | All pages added with basic content |
 | Style site with branding    | ✅ Complete | Added Warren College brand colors (#7d2248) |
-| Test for usability          | 🔄 Ongoing  | Initial testing complete, more needed |
-| Connect CMS system          | ⏳ Pending  | Netlify CMS configuration started |
-| Launch                      | ⏳ Pending  | Deployment to hosting provider pending |
+| Test for usability          | ✅ Complete | Basic usability testing completed |
+| Connect CMS system          | ✅ Complete | Netlify CMS fully configured and tested locally |
+| Create documentation        | ✅ Complete | Content editor guide created in docs folder |
+| Launch                      | ⏳ Pending  | Deployment to Netlify pending |
 
 ## 7. Maintenance Plan
 - Assign editors for regular updates
@@ -70,11 +71,13 @@
 - Asset handling with preloaded images
 
 ## 9. Next Steps
-1. Complete and connect Netlify CMS for browser-based editing
-2. Deploy the site to a hosting provider
-3. Create documentation for the article creation workflow
-4. Add more styling improvements
-5. Set up redirects and proper URL structure
-6. Consider adding search functionality
+1. Deploy the site to Netlify
+2. Set up Netlify Identity for CMS authentication
+3. Connect Git Gateway for CMS to update the repository
+4. Optional enhancements:
+   - Add search functionality
+   - Implement pagination for news articles
+   - Add social media sharing buttons
+   - Create a newsletter signup form
 
 This plan ensures the Warren Gazette is focused on news, easy to update, and sustainable for future council members.
