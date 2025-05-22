@@ -1,0 +1,26 @@
+<div class="council-card">
+  <div class="card-inner">
+    {% if member.data.photo %}
+    <div class="member-photo">
+      <img src="{{ member.data.photo }}" alt="{{ member.data.title }}" />
+    </div>
+    {% else %}
+    <div class="member-photo no-photo">
+      <div class="placeholder">{{ member.data.title | truncate(2, true, '') | upper }}</div>
+    </div>
+    {% endif %}
+    
+    <div class="member-info">
+      <h3>{{ member.data.title }}</h3>
+      <p class="position">{{ member.data.position }}</p>
+      
+      {% if member.data.email %}
+      <p class="email">
+        <a href="mailto:{{ member.data.email }}">{{ member.data.email }}</a>
+      </p>
+      {% endif %}
+      
+      <a href="{{ member.url }}" class="view-profile">View Profile</a>
+    </div>
+  </div>
+</div>

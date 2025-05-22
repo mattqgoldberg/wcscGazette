@@ -18,6 +18,18 @@ module.exports = function(eleventyConfig) {
     const excerpt = content.substring(0, 200);
     return excerpt.substring(0, excerpt.lastIndexOf(' ')) + '...';
   });
+  
+  // Filter collection by a property value
+  eleventyConfig.addFilter("filterBy", function(collection, key, value) {
+    if (!collection) return [];
+    return collection.filter(item => {
+      if (item && item.data && key.startsWith('data.')) {
+        const nestedKey = key.split('.')[1];
+        return item.data[nestedKey] === value;
+      }
+      return false;
+    });
+  });
 
   // Copy assets to the output folder
   eleventyConfig.addPassthroughCopy({ "assets": "assets" });
@@ -30,6 +42,17 @@ module.exports = function(eleventyConfig) {
   
   // Copy any JS files
   eleventyConfig.addPassthroughCopy("src/**/*.js");
+  
+  // Add collections for organizing council members
+  eleventyConfig.addCollection("councilMembers", function(collectionApi) {
+    return collectionApi.getFilteredByGlob("./src/council/*.md");
+  });
+  
+  eleventyConfig.addCollection("executiveMembers", function(collectionApi) {
+    return collectionApi.getFilteredByGlob("./src/council/*.md").filter(item => {
+      return item.data.category === "Executive";
+    }).sort((a, b) => (a.data.order || 100) - (b.data.order || 100));
+  });
 
   return {
     dir: {

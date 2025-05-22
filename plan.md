@@ -46,6 +46,7 @@
 | Add About, Team, Contact    | ✅ Complete | All pages added with basic content |
 | Style site with branding    | ✅ Complete | Added Warren College brand colors (#7d2248) |
 | Test for usability          | ✅ Complete | Basic usability testing completed |
+| Fix Team page               | ✅ Complete | Fixed "Meet the Council" page to display council members properly |
 | Connect CMS system          | ✅ Complete | Netlify CMS fully configured and tested locally |
 | Create documentation        | ✅ Complete | Content editor guide created in docs folder |
 | Launch                      | ⏳ Pending  | Deployment to Netlify pending |

@@ -255,3 +255,125 @@ ul {
   text-decoration: none;
   font-weight: 500;
 }
+
+/* Team Page Styles */
+.team-page h1 {
+  color: #7d2248;
+  margin-bottom: 1rem;
+}
+
+.member-category {
+  margin-bottom: 2rem;
+}
+
+.member-category h2 {
+  color: #7d2248;
+  border-bottom: 2px solid #e6e6e6;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.members-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.members-list .council-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.members-list .council-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.members-list .card-inner {
+  padding: 1rem;
+}
+
+.members-list .member-photo {
+  height: 180px;
+  overflow: hidden;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  flex: auto;
+}
+
+.members-list .member-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.members-list .member-photo.no-photo {
+  background: #f0e6eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.members-list .member-photo .placeholder {
+  font-size: 2.5rem;
+  color: #7d2248;
+  font-weight: bold;
+  text-align: center;
+}
+
+.members-list h3 {
+  margin: 0 0 0.25rem 0;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.members-list .position {
+  color: #7d2248;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+  font-size: 0.95rem;
+}
+
+.members-list .email {
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+  word-break: break-all;
+}
+
+.members-list .view-profile {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: #7d2248;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  transition: background 0.3s ease;
+}
+
+.members-list .view-profile:hover {
+  background: #9e2a59;
+}
+
+.static-council-content h2 {
+  color: #7d2248;
+  border-bottom: 2px solid #e6e6e6;
+  padding-bottom: 0.5rem;
+  margin: 1.5rem 0 1rem;
+}
+
+.static-council-content ul {
+  padding-left: 1.5rem;
+  margin: 0 0 1.5rem 0;
+}
+
+.static-council-content li {
+  margin-bottom: 0.5rem;
+}
