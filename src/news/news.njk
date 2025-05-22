@@ -1,0 +1,23 @@
+---
+layout: base.njk
+tags: news
+title: "News"
+description: "All news articles from the Warren Gazette."
+permalink: "/news/index.html"
+---
+
+<h1>News Articles</h1>
+<p>The latest news and updates from Warren College Student Council.</p>
+
+<div class="news-listing">
+{% for article in collections.news | reverse %}
+  {% if article.url != page.url %}
+    <article>
+      <h2><a href="{{ article.url }}">{{ article.data.title }}</a></h2>
+      <p><small>{{ article.date | readableDate }} by {{ article.data.author }}</small></p>
+      <p><a href="{{ article.url }}">Read more...</a></p>
+    </article>
+    <hr>
+  {% endif %}
+{% endfor %}
+</div>

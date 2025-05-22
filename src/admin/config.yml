@@ -1,0 +1,17 @@
+# filepath: /Users/matthewgoldberg/Desktop/dev/wcscGazette/src/admin/config.yml
+backend:
+  name: git-gateway
+  branch: main
+media_folder: "src/images"
+public_folder: "/images"
+collections:
+  - name: "news"
+    label: "News"
+    folder: "src/news"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Author", name: "author", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }

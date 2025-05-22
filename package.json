@@ -1,0 +1,27 @@
+{
+  "name": "wcscgazette",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattqgoldberg/wcscGazette.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mattqgoldberg/wcscGazette/issues"
+  },
+  "homepage": "https://github.com/mattqgoldberg/wcscGazette#readme",
+  "description": "",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.0"
+  },
+  "dependencies": {
+    "netlify-cms-app": "^2.14.14"
+  }
+}
