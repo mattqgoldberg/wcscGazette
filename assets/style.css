@@ -422,6 +422,7 @@ ul {
   margin: 0 0 0.3rem 0;
   color: #7d2248;
   font-size: 1.1rem;
+  background: none;
 }
 
 .news-card p {
@@ -432,6 +433,90 @@ ul {
 
 .news-card small {
   color: #888;
+}
+
+/* Dark mode toggle button */
+.dark-mode-toggle {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  background: #7d2248;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.13);
+  z-index: 1000;
+  transition: background 0.2s;
+}
+.dark-mode-toggle:hover {
+  background: #9e2a59;
+}
+
+body.dark-mode {
+  background: #18171c;
+  color: #e2e2e2;
+}
+body.dark-mode main {
+  background: #23222a;
+  color: #e2e2e2;
+}
+body.dark-mode header,
+body.dark-mode footer {
+  background: #23222a;
+  color: #fff;
+}
+body.dark-mode .council-card,
+body.dark-mode .news-card {
+  background: #23222a;
+  color: #e2e2e2;
+  border-color: #33313a;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.22);
+}
+body.dark-mode .news-card:hover,
+body.dark-mode .council-card:hover {
+  border-color: #e2b5c7;
+}
+body.dark-mode a {
+  color: #e2b5c7;
+}
+body.dark-mode a:hover {
+  color: #fff;
+}
+body.dark-mode .view-profile,
+body.dark-mode .news-card a {
+  background: #7d2248;
+  color: #fff;
+}
+body.dark-mode .view-profile:hover {
+  background: #9e2a59;
+}
+body.dark-mode .news-card p {
+  color: #fff;
+}
+body.dark-mode .news-card h2 a {
+  background: none;
+}
+body.dark-mode .news-card p a {
+  background: none;
+}
+body.dark-mode header,
+body.dark-mode header h1,
+body.dark-mode header nav,
+body.dark-mode header nav a {
+  color: #fff;
+}
+body.dark-mode header nav a:hover {
+  color: #e2b5c7;
+}
+body.dark-mode header h1 a {
+  color: #fff;
+}
+body.dark-mode header h1 a:hover {
+  color: #e2b5c7;
 }
 
 /* Responsive adjustments for team page */
