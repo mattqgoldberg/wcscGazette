@@ -50,6 +50,7 @@
 | Connect CMS system          | ✅ Complete | Netlify CMS fully configured and tested locally |
 | Create documentation        | ✅ Complete | Content editor guide created in docs folder |
 | Fix card overlapping issues  | ✅ Complete | Improved card layout to prevent overlapping |
+| Migrate from Netlify Identity to Auth0 | ✅ Complete | Updated CMS authentication to use Auth0 instead of deprecated Netlify Identity |
 | Launch                      | ⏳ Pending  | Deployment to Netlify pending |
 
 ## 7. Maintenance Plan

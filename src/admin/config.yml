@@ -1,5 +1,10 @@
 backend:
-  name: git-gateway
+  name: auth0
+  domain: YOUR_AUTH0_DOMAIN.auth0.com # Replace with your Auth0 domain
+  clientId: YOUR_AUTH0_CLIENT_ID # Replace with your Auth0 client ID
+  audience: https://api.netlify.com/
+  scope: openid profile email
+  responseType: token id_token
   branch: main
 
 # For local development only - uncomment for local testing
