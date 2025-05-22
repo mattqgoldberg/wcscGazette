@@ -128,3 +128,130 @@ form button:hover {
 ul {
   padding-left: 1.2rem;
 }
+
+/* Council member styles */
+.council-members {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.council-card {
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  width: calc(33.33% - 1.5rem);
+  min-width: 250px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+@media (max-width: 992px) {
+  .council-card {
+    width: calc(50% - 1.5rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .council-card {
+    width: 100%;
+  }
+}
+
+.council-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.council-photo {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 3px solid #7d2248;
+}
+
+.council-card h3 {
+  margin: 0.5rem 0;
+  color: #7d2248;
+}
+
+.council-card .position {
+  font-weight: 600;
+  margin: 0.3rem 0;
+}
+
+.council-card .email {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+.grid-view {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.grid-view .council-card {
+  width: 100%;
+  min-width: 0;
+}
+
+/* Individual council member page */
+.council-member {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.member-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.member-content {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+@media (max-width: 768px) {
+  .member-content {
+    flex-direction: column;
+  }
+}
+
+.member-photo {
+  flex: 0 0 300px;
+}
+
+.member-photo img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.member-info {
+  flex: 1;
+}
+
+.member-bio {
+  margin-top: 1.5rem;
+  line-height: 1.6;
+}
+
+.back-link {
+  margin-top: 2rem;
+}
+
+.back-link a {
+  color: #7d2248;
+  text-decoration: none;
+  font-weight: 500;
+}

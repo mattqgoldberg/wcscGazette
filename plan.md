@@ -45,8 +45,8 @@
 | Implement article system    | ✅ Complete | Created article layout and sample content |
 | Add About, Team, Contact    | ✅ Complete | All pages added with basic content |
 | Style site with branding    | ✅ Complete | Added Warren College brand colors (#7d2248) |
-| Test for usability          | 🔄 Ongoing  | Initial testing complete, more needed |
-| Connect CMS system          | ⏳ Pending  | Netlify CMS configuration started |
+| Test for usability          | ✅ Complete | Basic usability testing completed |
+| Connect CMS system          | 🔄 Ongoing  | Netlify CMS configuration in progress |
 | Launch                      | ⏳ Pending  | Deployment to hosting provider pending |
 
 ## 7. Maintenance Plan
