@@ -49,6 +49,7 @@
 | Fix Team page               | ✅ Complete | Fixed "Meet the Council" page to display council members properly |
 | Connect CMS system          | ✅ Complete | Netlify CMS fully configured and tested locally |
 | Create documentation        | ✅ Complete | Content editor guide created in docs folder |
+| Fix card overlapping issues  | ✅ Complete | Improved card layout to prevent overlapping |
 | Launch                      | ⏳ Pending  | Deployment to Netlify pending |
 
 ## 7. Maintenance Plan

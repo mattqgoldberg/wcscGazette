@@ -52,7 +52,7 @@ header nav a:hover {
 }
 
 main {
-  max-width: 700px;
+  max-width: 900px;
   margin: 2rem auto;
   background: #fff;
   padding: 2rem 2.5rem;
@@ -141,7 +141,6 @@ ul {
   background: #fff;
   border-radius: 6px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  padding: 1.5rem;
   width: calc(33.33% - 1.5rem);
   min-width: 250px;
   transition: transform 0.2s, box-shadow 0.2s;
@@ -239,6 +238,9 @@ ul {
 
 .member-info {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .member-bio {
@@ -275,8 +277,9 @@ ul {
 
 .members-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .members-list .council-card {
@@ -292,20 +295,23 @@ ul {
 }
 
 .members-list .council-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-3px);
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 .members-list .card-inner {
-  padding: 1rem;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .members-list .member-photo {
-  height: 180px;
+  height: 100px;
   overflow: hidden;
   border-radius: 5px;
-  margin-bottom: 1rem;
-  flex: auto;
+  margin-bottom: 0.25rem;
+  flex: 0 0 auto;
 }
 
 .members-list .member-photo img {
@@ -329,33 +335,38 @@ ul {
 }
 
 .members-list h3 {
-  margin: 0 0 0.25rem 0;
+  margin: 0 0 0.15rem 0;
   color: #333;
-  font-size: 1.1rem;
+  font-size: 0.85rem;
+  line-height: 1.2;
 }
 
 .members-list .position {
   color: #7d2248;
   font-weight: 600;
-  margin: 0 0 0.5rem 0;
-  font-size: 0.95rem;
+  margin: 0 0 0.25rem 0;
+  font-size: 0.75rem;
+  line-height: 1.2;
 }
 
 .members-list .email {
-  font-size: 0.85rem;
-  margin-bottom: 1rem;
+  font-size: 0.8rem;
+  margin-bottom: 0.75rem;
   word-break: break-all;
+  line-height: 1.2;
 }
 
 .members-list .view-profile {
   display: inline-block;
-  padding: 0.5rem 1rem;
+  padding: 0.3rem 0.6rem;
   background: #7d2248;
   color: #fff;
   text-decoration: none;
   border-radius: 4px;
-  font-size: 0.85rem;
+  font-size: 0.7rem;
   transition: background 0.3s ease;
+  margin-top: auto;
+  align-self: flex-start;
 }
 
 .members-list .view-profile:hover {
@@ -376,4 +387,51 @@ ul {
 
 .static-council-content li {
   margin-bottom: 0.5rem;
+}
+
+/* Responsive adjustments for team page */
+@media (max-width: 992px) {
+  .members-list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
+  }
+  
+  .members-list .member-photo {
+    height: 90px;
+  }
+}
+
+@media (max-width: 768px) {
+  .members-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+  
+  .members-list .member-photo {
+    height: 110px;
+  }
+}
+
+@media (max-width: 500px) {
+  .members-list {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+  
+  .members-list .member-photo {
+    height: 120px;
+  }
+  
+  .members-list h3 {
+    font-size: 0.9rem;
+  }
+  
+  .members-list .position {
+    font-size: 0.8rem;
+  }
+  
+  .members-list .view-profile {
+    padding: 0.35rem 0.7rem;
+    font-size: 0.75rem;
+  }
 }
