@@ -2,12 +2,10 @@
 title: "Daniel T. Watts Awarded President Emeritus Status Despite Never Serving as President"
 date: 2025-05-12
 author: "Warren Gazette Staff"
-layout: news.njk
+layout: news-article.njk
 tags: news
 summary: "Daniel T. Watts, who won a contested 2003 election but never served as president due to a Judicial Board ruling, has been granted President Emeritus status by the Warren College Student Council."
 ---
-
-# Daniel T. Watts Awarded President Emeritus Status Despite Never Serving as President
 
 In the May 12, 2025 meeting, a resolution to honor former Warren College student Daniel T. Watts with the title of President Emeritus was passed unanimously by the Warren College Student Council. This unusual recognition comes despite Watts never having officially served as Council President.
 

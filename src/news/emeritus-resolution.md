@@ -2,12 +2,10 @@
 title: "Resolution Awards Posthumous President Emeritus Status to Erik Ward"
 date: 2025-05-12
 author: "Warren Gazette Staff"
-layout: news.njk
+layout: news-article.njk
 tags: news
 summary: "A resolution to posthumously honor Warren College alumnus Erik Ward with the title of President Emeritus was passed unanimously by the Warren College Student Council."
 ---
-
-# Resolution Awards Posthumous President Emeritus Status to Erik Ward
 
 In the May 12, 2025 meeting, a resolution to posthumously honor Warren College alumnus Erik Ward with the title of President Emeritus was passed unanimously by the Warren College Student Council.
 

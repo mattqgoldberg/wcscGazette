@@ -2,12 +2,10 @@
 title: "Warren Passes AAPI Heritage Month Resolution, Awaits Broader Approval"
 date: 2025-05-12
 author: "Warren Gazette Staff"
-layout: news.njk
+layout: news-article.njk
 tags: news
 summary: "Warren College Student Council passed a resolution celebrating Asian American and Pacific Islander Heritage Month unanimously and is awaiting passage by the UCSD AS Senate and other College Councils."
 ---
-
-# Warren Passes AAPI Heritage Month Resolution, Awaits Broader Approval
 
 At its May 12, 2025 meeting, the Warren College Student Council (WCSC) unanimously passed a resolution celebrating Asian American and Pacific Islander Heritage Month. The resolution now awaits consideration and passage by the Associated Students Senate and the other UCSD College Councils.
 
