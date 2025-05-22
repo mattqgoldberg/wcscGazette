@@ -6,14 +6,16 @@ layout: base.njk
 <p>Find the latest news and updates from the Warren College Student Council.</p>
 
 <h2>Latest News</h2>
+<div class="news-listing">
 {% for article in collections.news | reverse %}
   {% if article.data.permalink != "/news/index.html" %}
-    <article>
+    <div class="news-card">
       <h2><a href="{{ article.url }}">{{ article.data.title }}</a></h2>
       <p><small>{{ article.date | readableDate }} by {{ article.data.author }}</small></p>
       <p>{{ article.data.summary if article.data.summary else "Read more..." }}</p>
-    </article>
+    </div>
   {% endif %}
 {% else %}
   <p>No news articles yet. Check back soon!</p>
 {% endfor %}
+</div>
