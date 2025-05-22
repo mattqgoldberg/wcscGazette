@@ -1,15 +1,15 @@
 ---
-title: "Resolution Celebrating AAPI Heritage Month Passes Unanimously"
+title: "Warren Passes AAPI Heritage Month Resolution, Awaits Broader Approval"
 date: 2025-05-12
 author: "Warren Gazette Staff"
 layout: news.njk
 tags: news
-summary: "A resolution celebrating Asian American and Pacific Islander Heritage Month was passed unanimously by the UCSD AS Senate and College Councils."
+summary: "Warren College Student Council passed a resolution celebrating Asian American and Pacific Islander Heritage Month unanimously and is awaiting passage by the UCSD AS Senate and other College Councils."
 ---
 
-# Resolution Celebrating AAPI Heritage Month Passes Unanimously
+# Warren Passes AAPI Heritage Month Resolution, Awaits Broader Approval
 
-In the May 12, 2025 meeting, a resolution celebrating Asian American and Pacific Islander Heritage Month was passed unanimously by the Associated Students Senate and College Councils.
+At its May 12, 2025 meeting, the Warren College Student Council (WCSC) unanimously passed a resolution celebrating Asian American and Pacific Islander Heritage Month. The resolution now awaits consideration and passage by the Associated Students Senate and the other UCSD College Councils.
 
 The resolution, introduced by AS Senator Sitanggang and co-sponsored by Vice President External Cole, formally recognizes May as Asian American and Pacific Islander Heritage Month and celebrates the contributions of AAPI communities to American culture, history, and growth.
 
@@ -40,4 +40,4 @@ The full text of the resolution states:
 
 ## Next Steps
 
-The resolution directs public communications officers from each College Council and the Associated Students to make this resolution publicly available. Warren College Student Council is proud to share this resolution with the Warren College community as part of our commitment to celebrating diversity and inclusion on campus.
+The resolution will be considered by the Associated Students Senate and the other College Councils. Warren College Student Council is proud to have taken the lead in passing this resolution and looks forward to broader campus support as part of our commitment to celebrating diversity and inclusion on campus.
