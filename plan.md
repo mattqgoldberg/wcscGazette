@@ -51,7 +51,7 @@
 | Create documentation        | ✅ Complete | Content editor guide created in docs folder |
 | Fix card overlapping issues  | ✅ Complete | Improved card layout to prevent overlapping |
 | Configure CMS authentication | ✅ Complete | Set up Netlify Identity for CMS authentication |
-| Launch                      | ⏳ Pending  | Deployment to Netlify pending |
+| Launch                      | ✅ Complete | Deployed to Netlify |
 
 ## 7. Maintenance Plan
 - Assign editors for regular updates
@@ -74,10 +74,9 @@
 - Asset handling with preloaded images
 
 ## 9. Next Steps
-1. Deploy the site to Netlify
-2. Set up Netlify Identity for CMS authentication
-3. Connect Git Gateway for CMS to update the repository
-4. Optional enhancements:
+1. Fill out the list of council members with their images
+2. Start writing and publishing new articles
+3. Optional enhancements:
    - Add search functionality
    - Implement pagination for news articles
    - Add social media sharing buttons

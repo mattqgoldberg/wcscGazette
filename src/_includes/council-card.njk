@@ -6,7 +6,11 @@
     </div>
     {% else %}
     <div class="member-photo no-photo">
-      <div class="placeholder">{{ member.data.title | truncate(2, true, '') | upper }}</div>
+      <div class="placeholder">
+        {# Show first and last initial #}
+        {% set names = member.data.title.split(' ') %}
+        {{ names[0][0] ~ names[names.length-1][0] | upper }}
+      </div>
     </div>
     {% endif %}
     
