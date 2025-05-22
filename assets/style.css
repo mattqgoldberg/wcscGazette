@@ -139,10 +139,9 @@ ul {
 
 .council-card {
   background: #fff;
-  border-radius: 6px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  width: calc(33.33% - 1.5rem);
-  min-width: 250px;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e6e6e6;
   transition: transform 0.2s, box-shadow 0.2s;
   display: flex;
   flex-direction: column;
@@ -286,6 +285,7 @@ ul {
   background: #fff;
   border-radius: 8px;
   box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  border: 1px solid #e6e6e6;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   width: 100%;
@@ -295,8 +295,9 @@ ul {
 }
 
 .members-list .council-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transform: translateY(-2px) scale(1.01);
+  box-shadow: 0 6px 18px rgba(186,52,108,0.13);
+  border-color: #ba346c !important;
 }
 
 .members-list .card-inner {
@@ -478,7 +479,7 @@ body.dark-mode .news-card {
 }
 body.dark-mode .news-card:hover,
 body.dark-mode .council-card:hover {
-  border-color: #e2b5c7;
+  border-color: #ba346c;
 }
 body.dark-mode a {
   color: #e2b5c7;
@@ -487,12 +488,16 @@ body.dark-mode a:hover {
   color: #fff;
 }
 body.dark-mode .view-profile,
-body.dark-mode .news-card a {
-  background: #7d2248;
+body.dark-mode .news-card a,
+body.dark-mode .dark-mode-toggle {
+  background: #ba346c;
   color: #fff;
 }
 body.dark-mode .view-profile:hover {
-  background: #9e2a59;
+  background: #e2b5c7;
+}
+body.dark-mode .dark-mode-toggle:hover {
+  background: #e2b5c7;
 }
 body.dark-mode .news-card p {
   color: #fff;
@@ -517,6 +522,11 @@ body.dark-mode header h1 a {
 }
 body.dark-mode header h1 a:hover {
   color: #e2b5c7;
+}
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3 {
+  color: #ba346c;
 }
 
 /* Responsive adjustments for team page */
@@ -564,4 +574,21 @@ body.dark-mode header h1 a:hover {
     padding: 0.35rem 0;
     font-size: 0.75rem;
   }
+}
+
+body.dark-mode .members-list .council-card h3,
+body.dark-mode .members-list .council-card .position {
+  color: #fff;
+}
+
+body.dark-mode form button {
+  background: #ba346c;
+  color: #fff;
+}
+body.dark-mode form button:hover {
+  background: #e2b5c7;
+}
+
+body.dark-mode .members-list .council-card:hover {
+  border-color: #ba346c !important;
 }
