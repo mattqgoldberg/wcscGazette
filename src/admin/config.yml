@@ -3,7 +3,7 @@ backend:
   branch: main
 
 # For local development only - uncomment for local testing
-local_backend: true
+#local_backend: true
 
 # Media and asset configuration
 media_folder: "assets/images"
