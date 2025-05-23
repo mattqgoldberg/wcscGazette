@@ -10,7 +10,8 @@ permalink: "/contact/index.html"
   <li><strong>Office:</strong> Warren College Student Affairs, UC San Diego</li>
 </ul>
 <p>Or use the form below:</p>
-<form name="contact" netlify" onsubmit="handleContactSubmit(event)">
+<form name="contact" method="POST" netlify action="/submitted/">
+  <input type="hidden" name="form-name" value="contact">
   <p>
     <label>Your Name:<br><input type="text" name="name" required></label>
   </p>
@@ -24,12 +25,3 @@ permalink: "/contact/index.html"
     <button type="submit">Send</button>
   </p>
 </form>
-<script>
-function handleContactSubmit(e) {
-  e.preventDefault();
-  // Optionally, you can submit the form via AJAX here if you want Netlify to process it
-  // For now, just show a popup and reset the form
-  alert('Thank you for contacting us! Your message has been submitted.');
-  e.target.reset();
-}
-</script>
