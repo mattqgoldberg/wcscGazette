@@ -7,7 +7,9 @@
 <ul>
 	{% for person in people %}
 
-<li> <a href="/meet-the-team/{{loop.index0}}"> {{person['name']}} </a> </li>
+	<li> <a href="/meet-the-team/{{loop.index0}}"> {{person['name']}} </a> </li>
+
 	{% endfor %}
 </ul>
+
 {% endblock %}
